@@ -1,7 +1,7 @@
 // Seleccion de Id's
 const root = document.getElementById('root');
 const mySearch = document.getElementById('search');
-const mobileSearchOn = document.getElementById('mobileSearch')
+const mobileSearchOn = document.getElementById('mobileSearch');
 
 // Modificando buscador
 mySearch.addEventListener('change', () => {
@@ -22,7 +22,7 @@ window.addEventListener('load', () => { api(); loader();});
 const loader = () => {
     root.innerHTML = `
     <div class="card">
-    <img src="/assets/img/loading.gif" width="200" alt=""/>
+    <img src="assets/img/loading.gif" width="200" alt=""/>
     </div>
     `;
 }
@@ -48,19 +48,19 @@ const api = async (query) => {
                     <div class="title-card"><h1>${resultado.name}</h1></div>
                         <ul>
                             <li>
-                                <img src="/assets/img/capital.svg" alt=""/>
+                                <img src="assets/img/capital.svg" alt=""/>
                                 <p>${resultado.capital}</p>
                             </li>
                             <li>
-                                <img src="/assets/img/continente.svg" alt=""/>
+                                <img src="assets/img/continente.svg" alt=""/>
                                 <p>${resultado.region}</p>
                             </li>
                             <li>
-                                <img src="/assets/img/idioma.svg" alt=""/>
+                                <img src="assets/img/idioma.svg" alt=""/>
                                 <p>${resultado.languages[0].name}</p>
                             </li>
                             <li>
-                                <img src="/assets/img/moneda.svg" alt=""/>
+                                <img src="assets/img/moneda.svg" alt=""/>
                                 <p>${resultado.currencies[0].name} (${resultado.currencies[0].code})</p>
                             </li>
                         </ul>
