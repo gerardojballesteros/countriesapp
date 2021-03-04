@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #ffffffaf;
+    box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(20px);
+    z-index: 10;
+}
+
+header nav {
+    height: 55px;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header nav ul{
+    list-style: none;  
+}
+
+.desk, .mobile{
+    width: 50vw;
+    max-width: 800px;
+    height: 34px;
+    border-radius: 100px;
+    padding-left: 20px;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.41);
+    color: #939393;
+    opacity: 0.7;
+    font-size: 17px;
+    font-weight: 300;
+}
+.desk, .mobile:focus{
+    outline: none;
+}
+
+.input-mobile{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Content */
+.content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 90px;
+}
+
+.wrap-content{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.covid-19{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-covid{
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ED8980;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.wrap-covid h4{
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.wrap-covid h4 a{
+    color: black;
+    font-weight: 500;
+}
+
+/* Cards */
+.card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrap-card{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.content-card{
+    position: relative;
+    width: 300px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px 6px 20px 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+.content-card img{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+}
+.title-card{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.title-card h1{
+    color: #B8B8B8;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+    font-size: 30px;
+}
+
+.content-card ul{
+    list-style: none;
+    padding: 10px 20px;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-card ul li {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.content-card ul li img{
+    position: relative;
+    width: 24px!important;
+    height: 24px;
+    border-radius: 0px!important;
+}
+
+.content-card ul li p{
+    color: #929292;
+    padding-left: 10px;
+}
+
+.mobile{
+    display: none;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+footer{ 
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+}
+.item-footer p{
+    font-size: 20px;
+    color: #939393;
+    text-align: center;
+}
+
+.item-footer p a{
+    color: #ff5748;
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+@media (max-width: 800px){
+    .desk{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 80vw;
+    }
+    .input-mobile{
+      margin-top: 10px; 
+    }
+    .wrap-covid{
+        padding: 10px 20px;
+        margin-top: 70px;
+    }
+    header{
+        height: auto;
+    }
+    header nav{
+        padding: 0 20px;
+    }
+    .card{
+        padding: 0;
+    }
+    .content-card {
+        width: 300px;
+        display: grid;
+        justify-content: center;
+    }
+    #item-img{
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.098);
+    }
+    .error{
+        font-size: 15px;
+        padding: 20px;
+    }
+}
