@@ -63,6 +63,10 @@ const api = async (query) => {
                                 <img src="assets/img/moneda.svg" alt=""/>
                                 <p>${resultado.currencies[0].name} (${resultado.currencies[0].code})</p>
                             </li>
+                            <li>
+                                <img src="assets/img/limite.svg" alt=""/>
+                                <p id="borders">${resultado.borders}</p>
+                            </li>
                         </ul>
                 </div>
             `;
