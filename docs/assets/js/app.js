@@ -90,5 +90,11 @@ const api = async (query) => {
 
 }
 
+//modo oscuro
+
+const modoOscuro = () => {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+}
 
 

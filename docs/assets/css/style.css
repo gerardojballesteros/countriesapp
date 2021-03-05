@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    transition: 0.1s;
+}
+
 /* Header */
 header{
     position: fixed;
@@ -31,6 +35,10 @@ header nav ul{
     list-style: none;  
 }
 
+#git {
+    position: relative;
+    top: 2px;
+}
 .desk, .mobile{
     width: 50vw;
     max-width: 800px;
@@ -38,6 +46,7 @@ header nav ul{
     border-radius: 100px;
     padding-left: 20px;
     border: none;
+    background: white;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.41);
     color: #939393;
     opacity: 0.7;
@@ -180,6 +189,7 @@ header nav ul{
     margin-bottom: 70px;
     margin-top: 60px;
 }
+
 footer{ 
     width: 100%;
     height: auto;
@@ -202,8 +212,85 @@ footer{
     text-transform: lowercase;
 }
 
+.dark-mode{
+    background-color: rgb(18, 18, 18);
+    transition: 0.2s;
+}
+.dark-mode .check-on{
+    transform: translateX(30px);
+    background-color: #8E8AE9;
+    transition: 0.2s;
+}
+.dark-mode header{
+    background: rgba(0, 0, 0, 0.639);
+}
+.dark-mode .background{
+    background: #fc7b6f;
+}
+.dark-mode #search{
+    position: relative;
+    background: white;
+}
+.dark-mode .content-card{
+    background-color: rgb(52, 52, 52);
+}
+.dark-mode .title-card h1{
+    color: rgb(235, 234, 234);
+}
+.dark-mode .content-card ul li p{
+    color: rgb(235, 234, 234);
+}
+#check{
+    visibility: hidden;
+}
+#sol{
+    display: none;
+}
+#luna{
+    display: block;
+}
+.dark-mode #sol{
+    display: block;
+}
+
+.dark-mode #luna{
+    display: none;
+}
+.check-on{
+    width: 25px;
+    height: 25px;
+    background-color: #ff5d4f;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check-on img{
+    width: 15px;
+}
+
+.dark-light{
+    position: relative;
+    margin-left: 20px;
+}
+
+.background{
+    width: 55px;
+    height: 25px;
+    border-radius: 100px;
+    background: rgb(220, 220, 220);
+    overflow: hidden;
+}
+
 /* Media Queries */
+
 @media (max-width: 800px){
+    .dark-light{
+        position: relative;
+        margin-left: 40vw;
+    }
     .desk{
         display: none;
     }
@@ -240,5 +327,13 @@ footer{
     .error{
         font-size: 15px;
         padding: 20px;
+    }
+    
+}
+
+@media(max-width: 550px){
+    .dark-light{
+        position: relative;
+        margin-left: 0vw;
     }
 }
